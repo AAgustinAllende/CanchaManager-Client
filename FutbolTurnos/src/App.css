@@ -1,0 +1,158 @@
+.img-principal{
+  width: 1800;
+  height: auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+/*  TITULOS  */
+h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+/*  FORMULARIO  */
+.form-conteiner {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.input-style {
+  padding: 12px;
+  margin-right: 40px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+
+.input-style:focus {
+  background: #fff;
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+}
+
+/*  BOTONES  */
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#searchbtn{
+  margin-top: 15px;
+}
+button {
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+button:first-child {
+  background: #27ae60;
+  color: white;
+  
+}
+
+button:first-child:hover {
+  background: #219150;
+  transform: scale(1.05);
+}
+
+button:last-child {
+  background: #2980b9;
+  color: white;
+}
+
+button:last-child:hover {
+  background: #21618c;
+  transform: scale(1.05);
+}
+
+
+/*  TABLA DE TURNOS  */
+table {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+  background: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+td {
+  font-size: 16px;
+}
+
+tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
+}
+
+/* LOGIN */
+.body-style{
+  background-color: white;
+  margin-top: 30%;
+}
+
+/* PASARELA DE PAGO */
+.input-card{
+  color: black;
+}
+
+@keyframes progressAnim {
+  from { width: 0%;}
+  to { width: 100%;}
+}
