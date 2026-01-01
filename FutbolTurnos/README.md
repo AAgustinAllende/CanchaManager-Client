@@ -43,6 +43,8 @@ Frontend desarrollado con:
 # backend
 
 El sistema cuenta con un backend desarrollado en el mismo stack utilizado en otros módulos del proyecto, el cual funciona en entorno local.
+En la versión productiva (portfolio web) el código QR se genera en el frontend con datos simulados.
+En entorno local, el QR es generado por el backend en ASP.NET y SQL Server.
 
 
 # Objetivo del proyecto
