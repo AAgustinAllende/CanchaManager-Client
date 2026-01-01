@@ -1,5 +1,5 @@
 import React from "react";
-import QRCode from 'qrcode.react'
+import {QRCodeCanvas} from 'qrcode.react'
 import "bootstrap/dist/css/bootstrap.min.css"; 
 import { useNavigate, useParams } from "react-router-dom";
 import {
@@ -46,7 +46,7 @@ const QRPage = () => {
       style={{ width: "18rem", margin: "40px auto" }}
     >
       <div style={{ background: "white", padding: "10px" }}>
-  <QRCode value={datosQR} size={200} />
+  <QRCodeCanvas value={`Reserva ${id}`} size={200} />
 </div>
       {/* <img
         alt="QR Code"
