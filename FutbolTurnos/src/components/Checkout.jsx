@@ -113,7 +113,9 @@ const Checkout = () => {
 
         const data = await res.json(); 
 
-        navigate(`/qr/${data.id}`);
+        const fakeId=Date.now()
+        navigate(`/qr/${fakeId}`)
+        // navigate(`/qr/${data.id}`);
       } catch (error) {
         console.error("Error al agregar turno:", error);
         alert("Hubo un error al registrar el turno");
