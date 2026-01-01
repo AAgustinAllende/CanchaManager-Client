@@ -96,31 +96,37 @@ const Checkout = () => {
 
     setLoading(true);
 
-    setTimeout(async () => {
-      setPagado(true);
-      setLoading(false);
+    // setTimeout(async () => {
+    //   setPagado(true);
+    //   setLoading(false);
 
-      await crearEventoEnCalendar(nuevoTurno);
+    //   await crearEventoEnCalendar(nuevoTurno);
 
-      try {
-        const res = await fetch("http://localhost:59470/api/Futbol", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(nuevoTurno),
-        });
+    //   try {
+    //     const res = await fetch("http://localhost:59470/api/Futbol", {
+    //       method: "POST",
+    //       headers: { "Content-Type": "application/json" },
+    //       body: JSON.stringify(nuevoTurno),
+    //     });
 
-        if (!res.ok) throw new Error(`Error al guardar turno. Status: ${res.status}`);
+    //     if (!res.ok) throw new Error(`Error al guardar turno. Status: ${res.status}`);
 
-        const data = await res.json(); 
+    //     const data = await res.json(); 
 
-        const fakeId=Date.now()
-        navigate(`/qr/${fakeId}`)
-        // navigate(`/qr/${data.id}`);
-      } catch (error) {
-        console.error("Error al agregar turno:", error);
-        alert("Hubo un error al registrar el turno");
-      }
-    }, 2500);
+    //     navigate(`/qr/${data.id}`);
+    //   } catch (error) {
+    //     console.error("Error al agregar turno:", error);
+    //     alert("Hubo un error al registrar el turno");
+    //   }
+    // }, 2500);
+    setTimeout(() => {
+  setPagado(true);
+  setLoading(false);
+
+  const fakeId = Date.now();
+  navigate(`/qr/${fakeId}`);
+}, 2500);
+
   };
 
   return (
